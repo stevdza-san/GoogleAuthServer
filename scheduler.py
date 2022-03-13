@@ -27,7 +27,8 @@ def session_cleanup():
         print(expiry_time)
 
 
-schedule.every(15).minute.do(session_cleanup)
+schedule.every(15).minutes.do(session_cleanup)
+
 while True:
     schedule.run_pending()
     time.sleep(900)
