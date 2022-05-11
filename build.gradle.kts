@@ -6,8 +6,8 @@ val koinVersion: String by project
 
 plugins {
     application
-    kotlin("jvm") version "1.6.10"
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.6.10"
+    kotlin("jvm") version "1.6.20"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.6.20"
 }
 
 group = "com.example"
@@ -53,6 +53,6 @@ dependencies {
     implementation("io.insert-koin:koin-logger-slf4j:$koinVersion")
 
     // Google Client API Library
-    implementation("com.google.api-client:google-api-client:1.33.2")
+    implementation("com.google.api-client:google-api-client:1.34.0")
 
 }
